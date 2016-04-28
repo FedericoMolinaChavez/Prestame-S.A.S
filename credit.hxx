@@ -1,3 +1,5 @@
+int credit::id = 0;
+
 credit::credit(float monto, int Administracion, float seguro, float intereses, int plataforma, float iva, client *cliente, int cuotas)
 {
 	this->monto = monto;
@@ -8,6 +10,7 @@ credit::credit(float monto, int Administracion, float seguro, float intereses, i
 	this->iva = iva;
 	this->cliente = cliente;
 	this->cuotas = cuotas;
+	this->id++;
 
 	time_t timer;	//inicialización del tiempo a tiempo actual.
 	timer = time(0);
@@ -89,6 +92,7 @@ bool credit::pagoDeCreditoTotal(float montoPago)
 					pair<string,float> pago(reslo,total);
 					this->Operaciones.push_back(pago);
 					RevisionPago();
+					cout<<"Se pago"<<endl;
 					return true;			
 				}
 			else
@@ -199,3 +203,60 @@ bool credit::revisionFecha()
 			}
 		return false;
 	}
+
+int credit::getID()
+{
+	return this->id;
+}
+float credit::getMonto()
+{
+	return this->monto;
+}
+int credit::getAdministracion()
+{
+	return this->Administracion;
+}
+float credit::getSeguro()
+{
+	return this->seguro;
+}
+float credit::getIntereses()
+{
+	return this->intereses;
+}
+int credit::getPlataforma()
+{
+	return this->plataforma;
+}
+float credit::getIva()
+{
+	return this->iva;
+}
+int credit::getCuotas()
+{
+	return this->cuotas;
+}
+tm* credit::getLtm()
+{
+	return this->ltm;
+}
+client* credit::getCliente()
+{
+	return this->cliente;
+}
+int credit::getEstado()
+{
+	return this->estado;
+}
+void credit::setLtm(tm * ltm)
+{
+	this->ltm = ltm;
+}
+void credit::setEstado(int estado)
+{
+	this->estado = estado;
+}
+list<pair<string,float> > credit::getOperaciones()
+{
+	return this->Operaciones;
+}

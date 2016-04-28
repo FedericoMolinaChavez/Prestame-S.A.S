@@ -16,7 +16,7 @@ def emailxc(a, b, d, e, c):
 	sender = a
 	receivers = c
 
-	message = "From:"+d+"Subject: "+e
+	message = d+e
 
 	try:
    		smtpObj = smtplib.SMTP('smtp.gmail.com', 587)

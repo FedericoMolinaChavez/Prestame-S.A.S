@@ -27,3 +27,7 @@ float collection::getTotalCobro()
 {
 	return this->totalCobro;
 }
+string collection::getCedula()
+{
+	return this->cedula;
+}

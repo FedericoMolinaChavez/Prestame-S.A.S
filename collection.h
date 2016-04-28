@@ -20,6 +20,8 @@ class collection
 		~collection();
 		void calcularTotalCobro();
 		float getTotalCobro();
+		string getCedula();
+		
 };
 
 #include "collection.hxx"

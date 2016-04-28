@@ -7,6 +7,7 @@ client::client(string nombre,string apellido,string fechaDeNacimiento,char sexo,
 		this->numeroDeCedula = numeroDeCedula;
 		this->direccionDeResidencia = direccionDeResidencia;
 		this->tarjetaDeCredito = tarjetaDeCredito;
+		this->sexo = sexo;
 		this->tiempoLaborandoEnLaEmpresa = tiempoLaborandoEnLaEmpresa;
 		this->correoElectronico = correoElectronico;
 	}
@@ -28,6 +29,10 @@ char client::getSexo()
 string client::getEstadoCivil()
 {
 	return this->estadoCivil;
+}
+string client::getFechaDeNacimiento()
+{
+	return this->fechaDeNacimiento;
 }
 string client::getNumeroDeCedula()
 {

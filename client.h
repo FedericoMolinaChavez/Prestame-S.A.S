@@ -15,6 +15,12 @@ class client
 		string correoElectronico;
 		string tiempoLaborandoEnLaEmpresa;
 	public:
+			friend ostream& operator << (ostream &o, const client &c)
+		{
+				
+			o << "Nombre : " << c.nombre << " Apellido : " << c.apellido << " Correo : " << c.correoElectronico << "Direccion : " << c.direccionDeResidencia;
+			  return o; 
+		};
 		client(string nombre,string apellido,string fechaDeNacimiento,char sexo,string estadoCivil,string numeroDeCedula,string direccionDeResidencia,string tarjetaDeCredito,string correoElectronico,string tiempoLaborandoEnLaEmpresa); //constructor
 		~client();
 		string getNombre(); //getters and setters for cliente.
@@ -26,6 +32,7 @@ class client
 		string getTarjetaDeCredito();
 		string getCorreoElectronico();
 		string getTiempoLaborandoEnLaEmpresa();
+		string getFechaDeNacimiento();
 		void setNombre(string nombre);
 		void setApellido(string apellido);
 		void setSexo (char sexo);
