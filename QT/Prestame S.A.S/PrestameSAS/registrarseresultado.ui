@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>registrarseResultado</class>
+ <widget class="QDialog" name="registrarseResultado">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>872</width>
+    <height>479</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Registro</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../Iconos/Registro.png</normaloff>../Iconos/Registro.png</iconset>
+  </property>
+  <widget class="QPlainTextEdit" name="plainTextEditResultadoDelRegistro">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>841</width>
+     <height>451</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
