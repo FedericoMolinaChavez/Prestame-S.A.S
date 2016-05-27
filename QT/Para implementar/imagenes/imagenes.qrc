@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Diamante Simbolo Prestame SAS.png</file>
+        <file>Iniciar Sesion.png</file>
+        <file>Registrarse.png</file>
+        <file>Registro.png</file>
+        <file>Simbolo Genero Hombre.png</file>
+        <file>Simbolo Genero Indeterminado.png</file>
+        <file>Simbolo Genero Mujer.png</file>
+        <file>Validar Correo.png</file>
+        <file>Validar Email.png</file>
+        <file>Menu Moderador.png</file>
+        <file>Menu Usuario.png</file>
+    </qresource>
+</RCC>
